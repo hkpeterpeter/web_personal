@@ -68,7 +68,7 @@ const carouselItems = [
 
 const carouselItemsInstance = carouselItems.map(item => (
   <Carousel.Item>
-    <Image className="center-block" src={`/slideshow_images/${item.fn}`} responsive alt={item.evt} />
+    <Image className="center-block" src={`slideshow_images/${item.fn}`} responsive alt={item.evt} />
     <Carousel.Caption>
       <h3>{item.evt}</h3>
     </Carousel.Caption>
@@ -264,7 +264,7 @@ const profileInstance = (
       <Col xs={12} sm={6} md={3} lg={2}>
         <Image
           className="center-block" thumbnail responsive
-          src="/assets/profile_peter.jpg" alt="Profile picture"
+          src="assets/profile_peter.jpg" alt="Profile picture"
         />
       </Col>
       <Col xs={12} sm={6} md={3} lg={3}>
@@ -292,123 +292,123 @@ const reportSpring17 = (
 
 const reportWinter16 = (
   <h4>
-    <Button href="/evaluation/COMP1029C_LA1_Winter1617.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP1029C_LA1_Winter1617.pdf"><Glyphicon glyph="download-alt" />
       COMP1029C LA1 </Button> &nbsp;
-    <Button href="/evaluation/COMP1029J_LA1_Winter1617.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP1029J_LA1_Winter1617.pdf"><Glyphicon glyph="download-alt" />
       COMP1029J LA2 </Button> &nbsp;
   </h4>
 );
 
 const reportFall16 = (
   <h4>
-    <Button href="/evaluation/COMP1001_LA1_Fall1617.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP1001_LA1_Fall1617.pdf"><Glyphicon glyph="download-alt" />
       COMP1001 LA1 </Button> &nbsp;
-    <Button href="/evaluation/COMP3111_LA1_Fall1617.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111_LA1_Fall1617.pdf"><Glyphicon glyph="download-alt" />
       COMP3111 LA1 </Button> &nbsp;
-    <Button href="/evaluation/COMP3111_LA2_Fall1617.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111_LA2_Fall1617.pdf"><Glyphicon glyph="download-alt" />
       COMP3111 LA2 </Button> &nbsp;
-    <Button href="/evaluation/COMP3111_LA3_Fall1617.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111_LA3_Fall1617.pdf"><Glyphicon glyph="download-alt" />
       COMP3111 LA3 </Button> &nbsp;
-    <Button href="/evaluation/COMP3111_LA4_Fall1617.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111_LA4_Fall1617.pdf"><Glyphicon glyph="download-alt" />
       COMP3111 LA4 </Button> &nbsp;
-    <Button href="/evaluation/COMP3111H_LA1_Fall1617.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111H_LA1_Fall1617.pdf"><Glyphicon glyph="download-alt" />
       COMP3111H LA1 </Button> &nbsp;
   </h4>
 );
 
 const reportSpring16 = (
   <h4>
-    <Button href="/evaluation/COMP4511_LA1_Spring1516.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP4511_LA1_Spring1516.pdf"><Glyphicon glyph="download-alt" />
       COMP4511 LA1 </Button> &nbsp;
   </h4>
 );
 
 const reportFall15 = (
   <h4>
-    <Button href="/evaluation/COMP3111_LA1_Fall1516.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111_LA1_Fall1516.pdf"><Glyphicon glyph="download-alt" />
       COMP3111 LA1 </Button> &nbsp;
-    <Button href="/evaluation/COMP3111_LA2_Fall1516.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111_LA2_Fall1516.pdf"><Glyphicon glyph="download-alt" />
       COMP3111 LA2 </Button> &nbsp;
-    <Button href="/evaluation/COMP3111_LA3_Fall1516.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111_LA3_Fall1516.pdf"><Glyphicon glyph="download-alt" />
       COMP3111 LA3 </Button> &nbsp;
-    <Button href="/evaluation/COMP3111_T1_Fall1516.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111_T1_Fall1516.pdf"><Glyphicon glyph="download-alt" />
       COMP3111 T1 </Button> &nbsp;
-    <Button href="/evaluation/COMP3111_T2_Fall1516.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111_T2_Fall1516.pdf"><Glyphicon glyph="download-alt" />
       COMP3111 T2 </Button> &nbsp;
-    <Button href="/evaluation/COMP3111_T3_Fall1516.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111_T3_Fall1516.pdf"><Glyphicon glyph="download-alt" />
       COMP3111 T3 </Button> &nbsp;
-    <Button href="/evaluation/COMP3111H_LA1_Fall1516.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111H_LA1_Fall1516.pdf"><Glyphicon glyph="download-alt" />
       COMP3111H LA1 </Button> &nbsp;
-    <Button href="/evaluation/COMP3111H_T1_Fall1516.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111H_T1_Fall1516.pdf"><Glyphicon glyph="download-alt" />
       COMP3111H T1 </Button> &nbsp;
   </h4>
 );
 
 const reportSpring15 = (
   <h4>
-    <Button href="/evaluation/COMP2012_LA1_Spring1415.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP2012_LA1_Spring1415.pdf"><Glyphicon glyph="download-alt" />
       COMP2012 LA1 </Button> &nbsp;
-    <Button href="/evaluation/COMP2012_LA3_Spring1415.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP2012_LA3_Spring1415.pdf"><Glyphicon glyph="download-alt" />
       COMP2012 LA3 </Button> &nbsp;
-    <Button href="/evaluation/COMP2012_LA5_Spring1415.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP2012_LA5_Spring1415.pdf"><Glyphicon glyph="download-alt" />
       COMP2012 LA5 </Button> &nbsp;
   </h4>
 );
 
 const reportFall14 = (
   <h4>
-    <Button href="/evaluation/COMP3111_T1_Fall1415.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111_T1_Fall1415.pdf"><Glyphicon glyph="download-alt" />
       COMP3111 T1 </Button> &nbsp;
-    <Button href="/evaluation/COMP3111_T2_Fall1415.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111_T2_Fall1415.pdf"><Glyphicon glyph="download-alt" />
       COMP3111 T2 </Button> &nbsp;
-    <Button href="/evaluation/COMP3111_T3_Fall1415.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111_T3_Fall1415.pdf"><Glyphicon glyph="download-alt" />
       COMP3111 T3 </Button> &nbsp;
-    <Button href="/evaluation/COMP3111H_T1_Fall1415.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111H_T1_Fall1415.pdf"><Glyphicon glyph="download-alt" />
       COMP3111H T1 </Button> &nbsp;
   </h4>
 );
 
 const reportSpring14 = (
   <h4>
-    <Button href="/evaluation/COMP2012_LA1A_Spring1314.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP2012_LA1A_Spring1314.pdf"><Glyphicon glyph="download-alt" />
       COMP2012 LA1A </Button> &nbsp;
-    <Button href="/evaluation/COMP2012_LA1B_Spring1314.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP2012_LA1B_Spring1314.pdf"><Glyphicon glyph="download-alt" />
       COMP2012 LA1B </Button> &nbsp;
-    <Button href="/evaluation/COMP3111_LA1_Spring1314.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111_LA1_Spring1314.pdf"><Glyphicon glyph="download-alt" />
       COMP3111 LA1 </Button> &nbsp;
-    <Button href="/evaluation/COMP3111_LA2_Spring1314.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111_LA2_Spring1314.pdf"><Glyphicon glyph="download-alt" />
       COMP3111 LA2 </Button> &nbsp;
-    <Button href="/evaluation/COMP3111_T1_Spring1314.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111_T1_Spring1314.pdf"><Glyphicon glyph="download-alt" />
       COMP3111 T1 </Button> &nbsp;
-    <Button href="/evaluation/COMP3111_T2_Spring1314.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111_T2_Spring1314.pdf"><Glyphicon glyph="download-alt" />
       COMP3111 T2 </Button> &nbsp;
-    <Button href="/evaluation/COMP3111_T3_Spring1314.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP3111_T3_Spring1314.pdf"><Glyphicon glyph="download-alt" />
       COMP3111 T3 </Button> &nbsp;
   </h4>
 );
 
 const reportFall13 = (
   <h4>
-    <Button href="/evaluation/COMP1022P_LA1_Fall1314.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP1022P_LA1_Fall1314.pdf"><Glyphicon glyph="download-alt" />
       COMP1022P LA1 </Button> &nbsp;
-    <Button href="/evaluation/COMP1022P_LA3_Fall1314.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP1022P_LA3_Fall1314.pdf"><Glyphicon glyph="download-alt" />
       COMP1022P LA3 </Button> &nbsp;
-    <Button href="/evaluation/COMP2012_LA1_Fall1314.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP2012_LA1_Fall1314.pdf"><Glyphicon glyph="download-alt" />
       COMP2012 LA1 </Button> &nbsp;
   </h4>
 );
 
 const reportFall11 = (
   <h4>
-    <Button href="/evaluation/COMP1022P_LA1C_Fall1112.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP1022P_LA1C_Fall1112.pdf"><Glyphicon glyph="download-alt" />
       COMP1022P LA1C </Button> &nbsp;
-    <Button href="/evaluation/COMP1022P_LA1D_Fall1112.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP1022P_LA1D_Fall1112.pdf"><Glyphicon glyph="download-alt" />
       COMP1022P LA1D </Button> &nbsp;
-    <Button href="/evaluation/COMP1022P_LA2A_Fall1112.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP1022P_LA2A_Fall1112.pdf"><Glyphicon glyph="download-alt" />
       COMP1022P LA2A</Button> &nbsp;
-    <Button href="/evaluation/COMP1004_LA1A_Fall1112.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP1004_LA1A_Fall1112.pdf"><Glyphicon glyph="download-alt" />
       COMP1004 LA1A </Button> &nbsp;
-    <Button href="/evaluation/COMP1004_LA1B_Fall1112.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP1004_LA1B_Fall1112.pdf"><Glyphicon glyph="download-alt" />
       COMP1004 LA1B </Button> &nbsp;
     <Label bsStyle="warning">COMP1004 &gt; COMP2011</Label> &nbsp;
   </h4>
@@ -416,26 +416,26 @@ const reportFall11 = (
 
 const reportSpring11 = (
   <h4>
-    <Button href="/evaluation/COMP2012_LA5_Spring1112.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP2012_LA5_Spring1112.pdf"><Glyphicon glyph="download-alt" />
       COMP2012 LA5 </Button> &nbsp;
-    <Button href="/evaluation/COMP2012_LA6_Spring1112.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP2012_LA6_Spring1112.pdf"><Glyphicon glyph="download-alt" />
       COMP2012 LA6 </Button> &nbsp;
   </h4>
 );
 
 const reportFall10 = (
   <h4>
-    <Button href="/evaluation/COMP104_LA1A_Fall1011.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP104_LA1A_Fall1011.pdf"><Glyphicon glyph="download-alt" />
       COMP104 LA1A </Button> &nbsp;
-    <Button href="/evaluation/COMP104_LA1C_Fall1011.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP104_LA1C_Fall1011.pdf"><Glyphicon glyph="download-alt" />
       COMP104 LA1C </Button> &nbsp;
-    <Button href="/evaluation/COMP104_T1A_Fall1011.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP104_T1A_Fall1011.pdf"><Glyphicon glyph="download-alt" />
       COMP104 T1A </Button> &nbsp;
-    <Button href="/evaluation/COMP104_T1C_Fall1011.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP104_T1C_Fall1011.pdf"><Glyphicon glyph="download-alt" />
       COMP104 T1C </Button> &nbsp;
-    <Button href="/evaluation/COMP211_LA1B_Fall1011.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP211_LA1B_Fall1011.pdf"><Glyphicon glyph="download-alt" />
       COMP211 LA1B </Button> &nbsp;
-    <Button href="/evaluation/COMP211_T1B_Fall1011.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP211_T1B_Fall1011.pdf"><Glyphicon glyph="download-alt" />
       COMP211 T1B </Button> &nbsp;
     <Label bsStyle="warning">COMP104 &gt; COMP2011</Label> &nbsp;
     <Label bsStyle="danger">COMP211 &gt; COMP3111</Label>
@@ -444,7 +444,7 @@ const reportFall10 = (
 
 const reportSpring10 = (
   <h4>
-    <Button href="/evaluation/COMP201_L1B_Spring1011.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP201_L1B_Spring1011.pdf"><Glyphicon glyph="download-alt" />
       COMP201 L1B </Button> &nbsp;
     <Label bsStyle="warning">COMP201 &gt; COMP3021</Label> &nbsp;
   </h4>
@@ -452,17 +452,17 @@ const reportSpring10 = (
 
 const reportFall09 = (
   <h4>
-    <Button href="/evaluation/COMP104_LA1B_Fall0910.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP104_LA1B_Fall0910.pdf"><Glyphicon glyph="download-alt" />
       COMP104 LA1B </Button> &nbsp;
-    <Button href="/evaluation/COMP104_LA1C_Fall0910.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP104_LA1C_Fall0910.pdf"><Glyphicon glyph="download-alt" />
       COMP104 LA1C </Button> &nbsp;
-    <Button href="/evaluation/COMP104_LA2C_Fall0910.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP104_LA2C_Fall0910.pdf"><Glyphicon glyph="download-alt" />
       COMP104 LA2C </Button> &nbsp;
-    <Button href="/evaluation/COMP104_LA3D_Fall0910.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP104_LA3D_Fall0910.pdf"><Glyphicon glyph="download-alt" />
       COMP104 LA3D </Button> &nbsp;
-    <Button href="/evaluation/COMP104_T1A_Fall0910.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP104_T1A_Fall0910.pdf"><Glyphicon glyph="download-alt" />
       COMP104 T1A </Button> &nbsp;
-    <Button href="/evaluation/COMP104_T2C_Fall0910.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP104_T2C_Fall0910.pdf"><Glyphicon glyph="download-alt" />
       COMP104 T2C </Button> &nbsp;
     <Label bsStyle="warning">COMP104 &gt; COMP2011</Label> &nbsp;
   </h4>
@@ -470,15 +470,15 @@ const reportFall09 = (
 
 const reportSpring09 = (
   <h4>
-    <Button href="/evaluation/COMP152_L2A_Spring0910.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP152_L2A_Spring0910.pdf"><Glyphicon glyph="download-alt" />
       COMP152 L2A </Button> &nbsp;
-    <Button href="/evaluation/COMP211_LA1B_Spring0910.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP211_LA1B_Spring0910.pdf"><Glyphicon glyph="download-alt" />
       COMP211 LA1B </Button> &nbsp;
-    <Button href="/evaluation/COMP211_LA2B_Spring0910.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP211_LA2B_Spring0910.pdf"><Glyphicon glyph="download-alt" />
       COMP211 LA2B </Button> &nbsp;
-    <Button href="/evaluation/COMP211_T1B_Spring0910.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP211_T1B_Spring0910.pdf"><Glyphicon glyph="download-alt" />
       COMP211 T1B </Button> &nbsp;
-    <Button href="/evaluation/COMP211_T2B_Spring0910.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP211_T2B_Spring0910.pdf"><Glyphicon glyph="download-alt" />
       COMP211 T2B </Button> &nbsp;
     <Label bsStyle="warning">COMP152 &gt; COMP2012 </Label> &nbsp;
     <Label bsStyle="danger">COMP211 &gt; COMP3111</Label>
@@ -487,17 +487,17 @@ const reportSpring09 = (
 
 const reportFall08 = (
   <h4>
-    <Button href="/evaluation/COMP104_LA2A_Fall0809.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP104_LA2A_Fall0809.pdf"><Glyphicon glyph="download-alt" />
       COMP104 LA2A </Button> &nbsp;
-    <Button href="/evaluation/COMP104_LA2C_Fall0809.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP104_LA2C_Fall0809.pdf"><Glyphicon glyph="download-alt" />
       COMP104 LA2C </Button> &nbsp;
-    <Button href="/evaluation/COMP104_T2A_Fall0809.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP104_T2A_Fall0809.pdf"><Glyphicon glyph="download-alt" />
       COMP104 T2A </Button> &nbsp;
-    <Button href="/evaluation/COMP104_T2C_Fall0809.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP104_T2C_Fall0809.pdf"><Glyphicon glyph="download-alt" />
       COMP104 T2C </Button> &nbsp;
-    <Button href="/evaluation/COMP102_LA1A_Fall0809.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP102_LA1A_Fall0809.pdf"><Glyphicon glyph="download-alt" />
       COMP102 LA1A </Button> &nbsp;
-    <Button href="/evaluation/COMP102_LA1B_Fall0809.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP102_LA1B_Fall0809.pdf"><Glyphicon glyph="download-alt" />
       COMP102 LA1B </Button> &nbsp;
     <Label bsStyle="warning">COMP104 &gt; COMP2011</Label> &nbsp;
     <Label bsStyle="danger">COMP102 (deprecated)</Label>
@@ -506,11 +506,11 @@ const reportFall08 = (
 
 const reportSpring08 = (
   <h4>
-    <Button href="/evaluation/COMP171_T2B_Spring0809.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP171_T2B_Spring0809.pdf"><Glyphicon glyph="download-alt" />
       COMP171 T2B </Button> &nbsp;
-    <Button href="/evaluation/COMP171_T3C_Spring0809.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP171_T3C_Spring0809.pdf"><Glyphicon glyph="download-alt" />
       COMP171 T3C</Button> &nbsp;
-    <Button href="/evaluation/COMP102_LA1B_Spring0809.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP102_LA1B_Spring0809.pdf"><Glyphicon glyph="download-alt" />
       COMP102 LA1B </Button> &nbsp;
     <Label bsStyle="warning">COMP171 &gt; COMP2012</Label> &nbsp;
     <Label bsStyle="danger">COMP102 (deprecated)</Label>
@@ -519,9 +519,9 @@ const reportSpring08 = (
 
 const reportFall07 = (
   <h4>
-    <Button href="/evaluation/COMP104_LA1C_Fall0708.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP104_LA1C_Fall0708.pdf"><Glyphicon glyph="download-alt" />
       COMP104 LA1C </Button> &nbsp;
-    <Button href="/evaluation/COMP104_T1C_Fall0708.pdf"><Glyphicon glyph="download-alt" />
+    <Button href="evaluation/COMP104_T1C_Fall0708.pdf"><Glyphicon glyph="download-alt" />
       COMP104 T1C</Button> &nbsp;
     <Label bsStyle="warning">COMP104 &gt; COMP2011 </Label>
   </h4>
@@ -638,7 +638,7 @@ const summaryCOMP1029CGoodPoints = (
 const summaryCOMP1029CBadPoints = (
   <Panel bsStyle="danger" header={summaryBadPointsHeader}>
     <ol>
-      <li>Please check the emails in a more detailed way</li>
+      <li>Please check the emails in a more detailed way</li>
     </ol>
   </Panel>
 );
@@ -647,7 +647,7 @@ const summaryCOMP1029JGoodPoints = (
   <Panel bsStyle="success" header={summaryGoodPointsHeader}>
     <ol>
       <li>Explain things clearly</li>
-      <li> I can see that the TA has very solid knowledge about Java</li>
+      <li>I can see that the TA has very solid knowledge about Java</li>
     </ol>
   </Panel>
 );
