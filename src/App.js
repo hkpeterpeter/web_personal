@@ -150,7 +150,7 @@ const profileContentStartup = (
   <div>
     <p>Mr. Chung is a <strong>co-founder</strong> of
   <a href="https://habhub.tech"><strong>
-    <span className="HabWordStyle">Hab</span><span className="HubWordStyle">Hub</span>
+    <span className="HabWordStyle">&nbsp;Hab</span><span className="HubWordStyle">Hub</span>
   </strong></a></p>
     <ul>
       <li>Awards received by HabHub
@@ -164,20 +164,20 @@ const profileContentStartup = (
       </li>
       <li>Media coverage
           <ul>
-            <li>2017-03-23: <a href="https://www.am730.com.hk/column/%E6%96%B0%E8%81%9E/%E7%A4%BE%E5%89%B5ceo%E5%A4%A7%E5%B0%88%E8%B3%BD-%E5%A4%A7%E5%B0%88%E7%94%9F%E3%80%8C%E5%A5%BD%E6%A9%8B%E3%80%8D%E6%89%B6%E8%B2%A7-71215" >AM730</a> (Chinese) </li>
-            <li> 2016-07-03: <a href="http://bit.ly/mtech16_habhub_at_hk01"> HK01 News </a> (Chinese) </li>
-            <li> 2016-07-06: <a href="http://unwire.pro/2016/07/06/hkstp-host-hk-1st-dreamcatchers-medtech-hackathon/feature/" >Unwire.Pro</a> (Chinese)</li>
-            <li> 2016-11-14: <a href="http://www.itpromag.com/hack-o-life-2016-23102">IT Pro Magazine </a> (Chinese)</li>
-            <li>2016-11-14: <a href="http://hd.stheadline.com/news/columns/0/20161114/513252/" >Headline Daily </a> (Chinese) </li>
-            <li>2016-11-16: <a href="http://www.telecompaper.com/news/aia-cisco-hong-kong-univ-launch-hack-o-life-event--1172099" >Telecompaper</a> (English)</li>
+            <li>2016-07-03: <a href="http://bit.ly/mtech16_habhub_at_hk01"> HK01 News </a> </li>
+            <li>2016-07-06: <a href="http://unwire.pro/2016/07/06/hkstp-host-hk-1st-dreamcatchers-medtech-hackathon/feature/" >Unwire.Pro</a></li>
+            <li>2016-11-14: <a href="http://www.itpromag.com/hack-o-life-2016-23102">IT Pro Magazine </a> </li>
+            <li>2016-11-14: <a href="http://hd.stheadline.com/news/columns/0/20161114/513252/" >Headline Daily </a></li>
+            <li>2016-11-16: <a href="http://www.telecompaper.com/news/aia-cisco-hong-kong-univ-launch-hack-o-life-event--1172099" >Telecompaper</a></li>
+            <li>2017-03-23: <a href="https://www.am730.com.hk/column/%E6%96%B0%E8%81%9E/%E7%A4%BE%E5%89%B5ceo%E5%A4%A7%E5%B0%88%E8%B3%BD-%E5%A4%A7%E5%B0%88%E7%94%9F%E3%80%8C%E5%A5%BD%E6%A9%8B%E3%80%8D%E6%89%B6%E8%B2%A7-71215" >AM730</a></li>
           </ul>
       </li>
       <li>Exhibitions
           <ul>
-            <li>2017-03-24: Smart Living@Science Park </li>
             <li>2016-11-30: HKUST Startups x Investors</li>
             <li>2016-12-04: Hour of Code Hong Kong 2nd anniversary</li>
             <li>2017-01-20: HealthTech Asia 2017</li>
+            <li>2017-03-24: Smart Living@Science Park </li>
           </ul>
       </li>
     </ul>
@@ -195,11 +195,11 @@ const profileContentVolunteer = (
       in Hong Kong.</p>
     <ul>
       <li>Founding President - CSE Alumni Association (CSEAA) 2014
-            <em><small>(Vice President in 2015-16, Treasurer in 2017-)</small>
+            <em><small> (Vice President in 2015-16, Treasurer in 2017)</small>
             </em> </li>
       <li>Organizer, Operation Team, Hong Kong Open Source Conference 2017</li>
       <li>Alumni Fellow - <a href="http://abfye.ust.hk">The Academy for Bright
-        Future Young Engineers, HKUST</a> 2017 - </li>
+        Future Young Engineers, HKUST</a> 2017</li>
       <li>Organizing Committee Member - World Internet Developer Summit 2016</li>
     </ul>
   </div>
