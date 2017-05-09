@@ -1,0 +1,47 @@
+.App {
+  text-align: left;
+}
+
+.Accordion {
+  cursor: pointer;
+}
+
+.Footer {
+  text-align: center;
+}
+
+.Padder {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.HabWordStyle {
+  color:#4BD691 ;
+  text-transform:none;
+  display: inline-block;
+}
+
+.HubWordStyle {
+  color:#FFA365 ;
+  display: inline-block;
+  text-transform:none;
+}
+
+/* Carousel style override */
+.carousel-control.left, .carousel-control.right {
+    background-image: none !important;
+}
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+	color: #000000;
+}
+
+.carousel-indicators li {
+  background-color: #999 !important;
+  background-color: rgba(70,70,70,.25) !important;
+}
+.carousel-indicators .active {
+  background-color: #444 !important;
+}
