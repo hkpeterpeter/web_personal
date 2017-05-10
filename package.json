@@ -1,7 +1,7 @@
 {
   "homepage": ".",
   "name": "web_personal",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "prop-types": "^15.5.9",
