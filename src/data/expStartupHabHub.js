@@ -1,8 +1,7 @@
 const makeMedia = (publisher, date, url) => ({ publisher, date, url });
 
 const expStartupHabHubDescription = `Mr. Chung is a co-founder of HabHub, a health-tech
-startup with a mission to improve home rehabilitation experience, especially for post-stroke patients.
-HabHub received many awards and funding support.`;
+startup. HabHub received many awards and media coverage.`;
 
 const awardSocialInnovation = {
   title: 'Best Technology Application Award',

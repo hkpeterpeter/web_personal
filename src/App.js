@@ -323,6 +323,9 @@ const tabsTeachingReportInstance = (
 const summaryGoodPointsHeader = <h3><Glyphicon glyph="thumbs-up" /> What was good about Peter?</h3>;
 const summaryBadPointsHeader = <h3><Glyphicon glyph="thumbs-down" /> How might Peter be improved? </h3>;
 
+import summaryCOMP1001 from './data/summaryCOMP1001';
+import TeachingSummary from './TeachingSummary';
+
 
 const summaryCOMP1001GoodPoints = (
   <Panel bsStyle="success" header={summaryGoodPointsHeader}>
@@ -535,17 +538,17 @@ const summaryCOMP4511BadPoints = (
 );
 
 
-const summaryCOMP1001 = (
-  <div>
-    <h4>Exploring Multimedia and Internet Computing</h4>
-    <Grid>
-      <Row>
-        <Col xs={12} sm={12} md={6} lg={6}>{summaryCOMP1001GoodPoints}</Col>
-        <Col xs={12} sm={12} md={6} lg={6}>{summaryCOMP1001BadPoints}</Col>
-      </Row>
-    </Grid>
-  </div>
-);
+// const summaryCOMP1001 = (
+//   <div>
+//     <h4>Exploring Multimedia and Internet Computing</h4>
+//     <Grid>
+//       <Row>
+//         <Col xs={12} sm={12} md={6} lg={6}>{summaryCOMP1001GoodPoints}</Col>
+//         <Col xs={12} sm={12} md={6} lg={6}>{summaryCOMP1001BadPoints}</Col>
+//       </Row>
+//     </Grid>
+//   </div>
+// );
 
 const summaryCOMP1022P = (
   <div>
@@ -563,7 +566,6 @@ const summaryCOMP1022P = (
 const summaryCOMP1029C = (
   <div>
     <h4>C Bridging Course</h4>
-
     <Grid>
       <Row>
         <Col xs={12} sm={12} md={6} lg={6}>{summaryCOMP1029CGoodPoints}</Col>
@@ -635,8 +637,8 @@ const summaryCOMP4511 = (
 );
 
 const tabsTeachingSummaryInstance = (
-  <Tabs defaultActiveKey={1}>
-    <Tab eventKey={1} title="COMP1001">{summaryCOMP1001}</Tab>
+  <Tabs defaultActiveKey={1} id="tabsTeachingSummary">
+    <Tab eventKey={1} title="COMP1001"><TeachingSummary summary={summaryCOMP1001} /></Tab>
     <Tab eventKey={2} title="COMP1022P">{summaryCOMP1022P}</Tab>
     <Tab eventKey={3} title="COMP1029C">{summaryCOMP1029C}</Tab>
     <Tab eventKey={4} title="COMP1029J">{summaryCOMP1029J}</Tab>
@@ -653,39 +655,20 @@ const footerInstance = (
     <p>Powered by
      <a href="https://react-bootstrap.github.io/"> React Bootstrap</a></p>
     <p> <a href="http://www.cse.ust.hk">CSE</a> | <a href="http://www.ust.hk">HKUST</a> </p>
+    <br /><br />
   </div>
 );
 
 const root = (
   <div className="App">
     <Grid>
-
+      <Row>&nbsp;</Row>
+      <Row><MySlideShow items={EVENTS} /></Row>
+      <Row className="Padder"><BasicProfile profile={PROFILE.basic} /></Row>
+      <Row>&nbsp;</Row>
+      <Row className="Padder">{profileDetails}</Row>
       <Row>
-        &nbsp;
-      </Row>
-
-      <Row>
-        <MySlideShow items={EVENTS} />
-      </Row>
-
-      <Row>
-        <div className="Padder">
-          <BasicProfile profile={PROFILE.basic} />
-        </div>
-      </Row>
-
-      <Row>
-        &nbsp;
-      </Row>
-
-      <Row>
-        <div className="Padder">
-          {profileDetails}
-        </div>
-      </Row>
-
-      <Row>
-        <div className="Padder">
+        <div>
           <h3><strong>Teaching Evaluation Summary</strong></h3>
           {tabsTeachingSummaryInstance}
         </div>
@@ -699,11 +682,9 @@ const root = (
     </Grid>
     <hr />
     {footerInstance}
-    <br /><br />
   </div>
 
 );
 
 const App = () => root;
-
 export default App;
