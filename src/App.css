@@ -15,6 +15,11 @@
   padding-right: 20px;
 }
 
+.Marginer {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .HabWordStyle {
   color:#4BD691 ;
   text-transform:none;

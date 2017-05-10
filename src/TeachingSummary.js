@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import {
   Row,
   Col,
@@ -8,7 +7,10 @@ import {
   Glyphicon,
   Panel,
   Label,
+  Button,
 } from 'react-bootstrap';
+
+import './TeachingSummary.css';
 
 const summaryGoodPointsHeader = <h3><Glyphicon glyph="thumbs-up" /> What was good about Peter?</h3>;
 const summaryBadPointsHeader = <h3><Glyphicon glyph="thumbs-down" /> How might Peter be improved? </h3>;
@@ -16,6 +18,7 @@ const summaryBadPointsHeader = <h3><Glyphicon glyph="thumbs-down" /> How might P
 class TeachingSummary extends React.Component {
   render() {
     const summary = this.props.summary;
+    const reports = this.props.reports;
     let goodPoints = null;
     let badPoints = null;
     let pastCodes = null;
@@ -26,13 +29,18 @@ class TeachingSummary extends React.Component {
       badPoints = summary.badPoints.map((m, i) => <li key={i}>{m}</li>);
     }
     if (summary.pastCodes !== undefined) {
-      pastCodes = summary.pastCodes.map((m, i) => <Label key={i} bsStyle="warning">{m}</Label>);
+      pastCodes = summary.pastCodes.map((m, i) => <Label className="Margin" key={i} bsStyle="warning">{m}</Label>);
     }
+    const filteredReports = reports.filter(m => m.code === summary.code || (
+      summary.pastCodes !== undefined &&
+      summary.pastCodes.indexOf(m.code) !== -1));
+    const reportDownloadLinks = filteredReports.map((m, i) => <Button className="Margin" key={i} href={`evaluation/${m.fileName}`}><Glyphicon glyph="download-alt" /> {m.semester} {m.section} </Button>);
     return (
       <div>
-        <h4>{summary.code} - {summary.title}</h4>
+        <h4><strong>{summary.code} - {summary.title}</strong></h4>
+        { summary.pastCodes !== undefined && <h5>Related: {pastCodes}</h5>}
+        { <h5>TA Evaluation: {reportDownloadLinks} </h5> }
         { summary.description !== undefined && <Panel>{summary.description}</Panel> }
-        { summary.pastCodes !== undefined && <p>Previous code: {pastCodes}</p>}
         <Grid>
           <Row>
             <Col xs={12} sm={12} md={6} lg={6}>
@@ -61,12 +69,8 @@ TeachingSummary.propTypes = {
     badPoints: PropTypes.arrayOf(PropTypes.string),
     pastCodes: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
-};
 
-// code: 'COMP1001',
-// title: 'Exploring Multimedia and Internet Computing',
-// description: descriptionCOMP1001,
-// goodPoints: [],
-// badPoints: ['xxx', 'yyy'],
+  reports: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default TeachingSummary;

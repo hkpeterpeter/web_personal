@@ -14,21 +14,23 @@ class BasicProfile extends React.Component {
     return (
       <Grid>
         <Row>
-          <Col xs={12} sm={4} md={3} lg={2}>
+          <Col xs={12} sm={2} md={2} lg={2}>
             <Image
               className="center-block"
               responsive
               src={`assets/${profile.picture}`} alt={`${profile.firstName} ${profile.lastName} Profile`}
             />
           </Col>
-          <Col xs={12} sm={8} md={9} lg={10}>
-            <h3><strong>{profile.firstName} {profile.lastName}</strong></h3>
-            <em>{profile.title}</em>,
-            <span> Department of {profile.department}, {profile.university}</span>
-            <p>{profile.office} via {profile.officeLocation} </p>
-            <p>{profile.degrees.map((degree, index) =>
-              <span key={index} >{degree}<br /></span>) }</p>
-            <p>{profile.description}</p>
+          <Col xs={12} sm={6} md={6} lg={6}>
+            <div>
+              <h3><strong>{profile.firstName} {profile.lastName}</strong></h3>
+              <em>{profile.title}</em>,
+              <span> Department of {profile.department}, {profile.university}</span>
+              <p>{profile.office} via {profile.officeLocation} </p>
+              <p>{profile.degrees.map((degree, index) =>
+                <span key={index} >{degree}<br /></span>) }</p>
+              <p>{profile.description}</p>
+            </div>
           </Col>
         </Row>
       </Grid>
