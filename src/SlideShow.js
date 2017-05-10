@@ -35,8 +35,8 @@ class SlideShow extends React.Component {
 SlideShow.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      evt: PropTypes.string,
-      fn: PropTypes.string
+      evt: PropTypes.string.isRequired,
+      fn: PropTypes.string.isRequired,
     })
   ).isRequired,
 

@@ -26,7 +26,8 @@ class BasicProfile extends React.Component {
             <em>{profile.title}</em>,
             <span> Department of {profile.department}, {profile.university}</span>
             <p>{profile.office} via {profile.officeLocation} </p>
-            <p>{profile.degrees.map(degree => <span>{degree}<br /></span>) }</p>
+            <p>{profile.degrees.map((degree, index) =>
+              <span key={index} >{degree}<br /></span>) }</p>
             <p>{profile.description}</p>
           </Col>
         </Row>
@@ -38,17 +39,17 @@ class BasicProfile extends React.Component {
 BasicProfile.propTypes = {
 
   profile: PropTypes.shape({
-    firstName: PropTypes.string,
-    lastName: PropTypes.string,
-    middleName: PropTypes.string,
-    title: PropTypes.string,
-    picture: PropTypes.string,
-    department: PropTypes.string,
-    university: PropTypes.string,
-    office: PropTypes.string,
-    officeLocation: PropTypes.string,
-    description: PropTypes.string,
-    degrees: PropTypes.arrayOf(PropTypes.string),
+    firstName: PropTypes.string.isRequired,
+    lastName: PropTypes.string.isRequired,
+    middleName: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    picture: PropTypes.string.isRequired,
+    department: PropTypes.string.isRequired,
+    university: PropTypes.string.isRequired,
+    office: PropTypes.string.isRequired,
+    officeLocation: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    degrees: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
 
 };

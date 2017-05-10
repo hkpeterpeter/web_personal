@@ -23,155 +23,19 @@ import MySlideShow from './SlideShow';
 
 import PROFILE from './data/profile';
 import BasicProfile from './BasicProfile';
+import ExpPanelHeader from './ExpPanelHeader';
+import ExpPanelContent from './ExpPanelContent';
 
-const profileContentHackOC = (
-  <div>
-    <p>
-  Mr. Chung co-founded hackUST in 2014, and was the lead staff organizer in 2014-2016.
-  The competitions were opened to all university students and alumni in Hong Kong.
-  These Hackathons ignited creativity and can-do spirit among university students.
-    </p>
-    <p>He also involved in organizing the following Hackathons:</p>
-    <ul>
-      <li>Ambassador - AngelHack Hong Kong 2017</li>
-      <li>Organizing Committee Leader -
-        <a href="https://imaginehack-2017.devpost.com/">Microsoft ImagineHack Hong Kong 2017</a>
-      </li>
-      <li>Organizer - <a href="http://hack.ust.hk" >hackUST</a> 2014-16</li>
-      <li>Organizer - <a href="http://hack.ust.hk/hackjam" >hackJam</a> 2016 </li>
-      <li>Ambassador - <a href="http://hackathon.cathaypacific.com/">Cathay Pacific Hackathon 2016</a> </li>
-      <li>Judge - <a href="https://www.eventbrite.com/e/cyberport-fintech-hackathon-2016-tickets-27166228922#">Cyberport FinTech Hackathon 2016</a></li>
-      <li>Committee Member - <a href="http://angelhack.com/angelhack-hong-kong-2016/">Angelhack Hong Kong 2016</a> </li>
-      <li>Guest Ambassador - <a href="http://www.fishackathon.co/hongkong">Fishackathon Hong Kong 2016</a> </li>
-    </ul>
-  </div>
+const expPanels = (
+  PROFILE.experience.map(
+    (exp, i) => {
+      const header = <h3 className="PointerCursor"><ExpPanelHeader title={exp.title} icon={exp.icon} /></h3>;
+      return <Panel header={header} key={i} eventKey={`xc${i}`} bsStyle="default" ><ExpPanelContent exp={exp} /></Panel>;
+    })
 );
-
-const profileContentHacker = (
-  <div>
-    <p>Mr. Chung participated and won many Hackathons in Hong Kong and oversea:</p>
-    <ul>
-      <li>Top 5 in HealthCare theme - <a href="http://hack.ust.hk/hack2017/index.html">hackUST 2017</a></li>
-      <li>Participant - SuperCharger FinTech Hackathon 2017</li>
-      <li>AIA Award Winner, <a href="https://hackathon.cisco.com/event/hackolife-hongkong">Hack-O-Life Hong Kong 2016</a></li>
-      <li>Ambassador - <a href="http://hackathon.cathaypacific.com/">Cathay Pacific Hackathon 2016</a> </li>
-      <li>Participant - <a href="http://www.fthackathon.com/">fthackathon 2016</a> </li>
-      <li>Participant - JeJu Hackathon 2016, South Korea </li>
-      <li>Guest - <a href="https://polyhack.hk/">PolyHack Hong Kong 2016</a> </li>
-      <li>Winner - Tencent Hackathon 2015, Tencent Headquarter, Shenzhen</li>
-    </ul>
-  </div>
-);
-
-const profileContentStartup = (
-  <div>
-    <p>Mr. Chung is a <strong>co-founder</strong> of
-  <a href="https://habhub.tech"><strong>
-    <span className="HabWordStyle">&nbsp;Hab</span><span className="HubWordStyle">Hub</span>
-  </strong></a></p>
-    <ul>
-      <li>Awards received by HabHub
-          <ul>
-            <li>Best Technology Application Award, <a href="http://www.youth.gov.hk/en/special/siceo/">Social Innovation CEO Competition (2016/17)</a></li>
-            <li>Grantee, <a href="https://www.cyberport.hk/en/about_cyberport/cyberport_youth/cyberport_creative_micro_fund" >Cyberport Creative Micro Fund 2016</a></li>
-            <li>Awardee, <a href="http://www.ec.ust.hk/pages/db.html">HKUST Entrepreneurship Acceleration Fund</a></li>
-            <li>AIA Award, <a href="https://hackathon.cisco.com/event/hackolife-hongkong">Hack-O-Life Hong Kong 2016</a></li>
-            <li>Finalist, <a href="http://mthackathon.info/needs">Dreamcatchers Medtech Hackathon 2016</a></li>
-          </ul>
-      </li>
-      <li>Media coverage
-          <ul>
-            <li>2016-07-03: <a href="http://bit.ly/mtech16_habhub_at_hk01"> HK01 News </a> </li>
-            <li>2016-07-06: <a href="http://unwire.pro/2016/07/06/hkstp-host-hk-1st-dreamcatchers-medtech-hackathon/feature/" >Unwire.Pro</a></li>
-            <li>2016-11-14: <a href="http://www.itpromag.com/hack-o-life-2016-23102">IT Pro Magazine </a> </li>
-            <li>2016-11-14: <a href="http://hd.stheadline.com/news/columns/0/20161114/513252/" >Headline Daily </a></li>
-            <li>2016-11-16: <a href="http://www.telecompaper.com/news/aia-cisco-hong-kong-univ-launch-hack-o-life-event--1172099" >Telecompaper</a></li>
-            <li>2017-03-23: <a href="https://www.am730.com.hk/column/%E6%96%B0%E8%81%9E/%E7%A4%BE%E5%89%B5ceo%E5%A4%A7%E5%B0%88%E8%B3%BD-%E5%A4%A7%E5%B0%88%E7%94%9F%E3%80%8C%E5%A5%BD%E6%A9%8B%E3%80%8D%E6%89%B6%E8%B2%A7-71215" >AM730</a></li>
-          </ul>
-      </li>
-      <li>Exhibitions
-          <ul>
-            <li>2016-11-30: HKUST Startups x Investors</li>
-            <li>2016-12-04: Hour of Code Hong Kong 2nd anniversary</li>
-            <li>2017-01-20: HealthTech Asia 2017</li>
-            <li>2017-03-24: Smart Living@Science Park </li>
-          </ul>
-      </li>
-    </ul>
-  </div>
-);
-
-const profileContentVolunteer = (
-  <div>
-    <p> Mr. Chung was the founding President of the preparation committee of CSE
-      Alumni Association (CSEAA) in 2014. Partnering with Department of
-      Computer Science and Engineering at HKUST, mentorship programs were
-      launched to enrich students’ industrial exposure in 2014 and 2015</p>
-    <p>He is an alumni fellow of The Academy for Bright Future Young Engineers,
-      HKUST. He occasionally involved in various Hours of Code events
-      in Hong Kong.</p>
-    <ul>
-      <li>Founding President - CSE Alumni Association (CSEAA) 2014
-            <em><small> (Vice President in 2015-16, Treasurer in 2017)</small>
-            </em> </li>
-      <li>Organizer, Operation Team, Hong Kong Open Source Conference 2017</li>
-      <li>Alumni Fellow - <a href="http://abfye.ust.hk">The Academy for Bright
-        Future Young Engineers, HKUST</a> 2017</li>
-      <li>Organizing Committee Member - World Internet Developer Summit 2016</li>
-    </ul>
-  </div>
-
-);
-
-const profileContentAdvisor = (
-  <div>
-    <p> Mr. Chung served as an advisor in SIGHT and assisted a student-driven team to
-       develop an electronic health record system for a NGO in Cambodia.
-       After a year of development, he joined the team to deploy the software
-        system in Cambodia in 2015. The system was well-received
-        by the partnering NGO.</p>
-    <p>In 2013, he served as Academic Counsellor in Department of
-      Computer Science and Engineering and Faculty Advisor in School of Engineering.</p>
-  </div>
-
-);
-
-const profileContentTeaching = (
-  <div>
-    <p>He was an awardee of the Professor Samuel Chanson Best Teaching Assistant in 2008. </p>
-    <p>In 2012-13, he led a team of teaching assistant to help develop a new Java programming course
-      tailor-made for year-1 students in the new 334-curriculum</p>
-  </div>
-);
-
-const profileHeaderHackOC = <h3 className="PointerCursor"><Glyphicon glyph="star" /> a passionate hackathon organizer</h3>;
-const profileHeaderHacker = <h3 className="PointerCursor"><Glyphicon glyph="user" /> an active hackathon participant</h3>;
-const profileHeaderStartup = <h3 className="PointerCursor"><Glyphicon glyph="tint" />  a health-tech startup co-founder</h3>;
-const profileHeaderVolunteer = <h3 className="PointerCursor"><Glyphicon glyph="gift" /> a motivated volunteer</h3>;
-const profileHeaderAdvisor = <h3 className="PointerCursor"><Glyphicon glyph="comment" /> a friendly student advisor</h3>;
-const profileHeaderTeaching = <h3 className="PointerCursor"><Glyphicon glyph="education" /> an experienced teaching support</h3>;
-
-
 const profileDetails = (
-  <Accordion >
-    <Panel header={profileHeaderHackOC} eventKey="ac1" bsStyle="default" >
-      {profileContentHackOC}
-    </Panel>
-    <Panel header={profileHeaderHacker} eventKey="ac2" bsStyle="default" >
-      {profileContentHacker}
-    </Panel>
-    <Panel header={profileHeaderStartup} eventKey="ac3" bsStyle="default">
-      {profileContentStartup}
-    </Panel>
-    <Panel header={profileHeaderVolunteer} eventKey="ac4" bsStyle="default">
-      {profileContentVolunteer}
-    </Panel>
-    <Panel header={profileHeaderAdvisor} eventKey="ac5" bsStyle="default">
-      {profileContentAdvisor}
-    </Panel>
-    <Panel header={profileHeaderTeaching} eventKey="ac6" bsStyle="default">
-      {profileContentTeaching}
-    </Panel>
+  <Accordion>
+    {expPanels}
   </Accordion>
 );
 
