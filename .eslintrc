@@ -12,6 +12,9 @@
          "comma-dangle": 0,
 
          // enable js as one of the jsx-filename-extension
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+
+        // disable prefer-stateless-function
+        "react/prefer-stateless-function": 0
     }
 }
