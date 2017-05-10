@@ -15,6 +15,9 @@
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
 
         // disable prefer-stateless-function
-        "react/prefer-stateless-function": 0
+        "react/prefer-stateless-function": 0,
+
+        // disable no-array-index-key
+        "react/no-array-index-key": 0
     }
 }

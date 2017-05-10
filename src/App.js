@@ -3,7 +3,6 @@ import {
   Row,
   Col,
   Grid,
-  Image,
   Panel,
   Accordion,
   Glyphicon,
@@ -14,34 +13,16 @@ import {
 } from 'react-bootstrap';
 import './App.css';
 
-import SlideShowItems from './data/SlideShowItems';
-import SlideShow from './SlideShow';
+// Learn more about import/export in ES2015
+// Most common usage:
+//  import myDefault from 'my-module';
+// https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/import
 
-const profileInformation = (
-  <div>
-    <h3><strong>K.L. Peter CHUNG</strong></h3>
-    <em> Teaching Associate </em>
-    <br />
-    <a href="http://www.cse.ust.hk/">Department of Computer Science and Engineering, HKUST</a>
-    <br />
-    <p>Office: Room 4209 (Lift 19, near CS Lab 4)</p>
-    <hr />
-    <p>MSc, Information Technology in Education, HKU (E-learning specialism)</p>
-    <p>MPhil, Computer Science and Engineering, HKUST</p>
-    <p>BEng, Computer Science (Information Engineering), HKUST (First Class Honors)</p>
-  </div>
-);
+import EVENTS from './data/events';
+import MySlideShow from './SlideShow';
 
-const profileDescription = (
-  <div>
-    <p>Mr Chung has <strong>more than 8 years of experience </strong>
-    in the higher education sector,
-    with solid experience in software engineering, entrepreneurship,
-    alumni engagement
-    and strong connections with the local startup community.
-    </p>
-  </div>
-);
+import PROFILE from './data/profile';
+import BasicProfile from './BasicProfile';
 
 const profileContentHackOC = (
   <div>
@@ -163,16 +144,16 @@ const profileContentTeaching = (
   </div>
 );
 
-const profileHeaderHackOC = <h3><Glyphicon glyph="star" /> a passionate hackathon organizer</h3>;
-const profileHeaderHacker = <h3><Glyphicon glyph="user" /> an active hackathon participant</h3>;
-const profileHeaderStartup = <h3><Glyphicon glyph="tint" />  a health-tech startup co-founder</h3>;
-const profileHeaderVolunteer = <h3><Glyphicon glyph="gift" /> a motivated volunteer</h3>;
-const profileHeaderAdvisor = <h3><Glyphicon glyph="comment" /> a friendly student advisor</h3>;
-const profileHeaderTeaching = <h3><Glyphicon glyph="education" /> an experienced teaching support</h3>;
+const profileHeaderHackOC = <h3 className="PointerCursor"><Glyphicon glyph="star" /> a passionate hackathon organizer</h3>;
+const profileHeaderHacker = <h3 className="PointerCursor"><Glyphicon glyph="user" /> an active hackathon participant</h3>;
+const profileHeaderStartup = <h3 className="PointerCursor"><Glyphicon glyph="tint" />  a health-tech startup co-founder</h3>;
+const profileHeaderVolunteer = <h3 className="PointerCursor"><Glyphicon glyph="gift" /> a motivated volunteer</h3>;
+const profileHeaderAdvisor = <h3 className="PointerCursor"><Glyphicon glyph="comment" /> a friendly student advisor</h3>;
+const profileHeaderTeaching = <h3 className="PointerCursor"><Glyphicon glyph="education" /> an experienced teaching support</h3>;
 
 
 const profileDetails = (
-  <Accordion className="Accordion">
+  <Accordion >
     <Panel header={profileHeaderHackOC} eventKey="ac1" bsStyle="default" >
       {profileContentHackOC}
     </Panel>
@@ -192,27 +173,6 @@ const profileDetails = (
       {profileContentTeaching}
     </Panel>
   </Accordion>
-);
-
-const profileInstance = (
-  <Grid>
-    <Row>
-      <Col xs={12} sm={6} md={3} lg={2}>
-        <Image
-          className="center-block" thumbnail responsive
-          src="assets/profile_peter.jpg" alt="Profile picture"
-        />
-      </Col>
-      <Col xs={12} sm={6} md={3} lg={3}>
-        {profileInformation}
-        <hr />
-      </Col>
-      <Col xs={12} sm={12} md={6} lg={7}>
-        {profileDescription}
-        {profileDetails}
-      </Col>
-    </Row>
-  </Grid>
 );
 
 const reportSpring17 = (
@@ -832,20 +792,32 @@ const footerInstance = (
   </div>
 );
 
-
 const root = (
   <div className="App">
     <Grid>
+
       <Row>
         &nbsp;
       </Row>
 
       <Row>
-        <SlideShow items={SlideShowItems} />
+        <MySlideShow items={EVENTS} />
       </Row>
 
       <Row>
-        {profileInstance}
+        <div className="Padder">
+          <BasicProfile profile={PROFILE.basic} />
+        </div>
+      </Row>
+
+      <Row>
+        &nbsp;
+      </Row>
+
+      <Row>
+        <div className="Padder">
+          {profileDetails}
+        </div>
       </Row>
 
       <Row>

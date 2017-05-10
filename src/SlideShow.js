@@ -5,6 +5,11 @@ import {
   Image,
 } from 'react-bootstrap';
 
+// React:
+// The key is used by React to identify which items have changed, are added,
+// or are removed and should be stable.
+//  https://facebook.github.io/react/docs/lists-and-keys.html#keys
+
 class SlideShow extends React.Component {
   render() {
     const carouselItemsInstance = this.props.items.map((item, index) => (
@@ -22,6 +27,10 @@ class SlideShow extends React.Component {
     );
   }
 }
+
+// Typechecking With PropTypes
+// Note: React.PropTypes is deprecated as of React v15.5. Please use the prop-types library instead.
+// https://facebook.github.io/react/docs/typechecking-with-proptypes.html
 
 SlideShow.propTypes = {
   items: PropTypes.arrayOf(

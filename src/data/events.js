@@ -1,6 +1,10 @@
-const SlideShowItems = [
-  { evt: 'hackUST 2017', fn: 'hackUST_2017.png' },
-  { evt: 'SENG Shenzhen Alumni Gathering 2017', fn: 'SENG_Engineering_Alumni_Gathering_2017.jpg' },
+const makeEvent = (evt, fn) => ({ evt, fn });
+
+// TODO: refactor the remaining data values
+
+const events = [
+  makeEvent('hackUST 2017', 'hackUST_2017.png'),
+  makeEvent('SENG Shenzhen Alumni Gathering 2017', 'SENG_Engineering_Alumni_Gathering_2017.jpg'),
   { evt: 'Microsoft ImagineHack 2017', fn: 'Microsoft_ImagineHack_2017.jpg' },
   { evt: 'HealthTech Asia 2017', fn: 'habhub-health-tech-asia-2017.jpg' },
   { evt: 'Hour of Code Hong Kong 2nd anniversary', fn: 'HoC-2nd-anniversary-HabHub-Booth.jpg' },
@@ -48,4 +52,4 @@ const SlideShowItems = [
   { evt: 'CSESS Annual Dinner 2010', fn: 'CSESS_Annual_Dinner_2010_big.jpg' },
 ];
 
-export default SlideShowItems;
+export default events;
