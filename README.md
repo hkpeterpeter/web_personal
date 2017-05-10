@@ -8,7 +8,7 @@ A static website built using [React Bootstrap](https://react-bootstrap.github.io
 ## Project Setup
 ```sh
 yarn
-yarn add -dev serve
+yarn global add serve
 ```
 ## Development
 ```sh
