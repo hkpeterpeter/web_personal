@@ -10,27 +10,6 @@
   text-align: center;
 }
 
-.Padder {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.Marginer {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.HabWordStyle {
-  color:#4BD691 ;
-  text-transform:none;
-  display: inline-block;
-}
-
-.HubWordStyle {
-  color:#FFA365 ;
-  display: inline-block;
-  text-transform:none;
-}
 
 /* Carousel style override */
 .carousel-control.left, .carousel-control.right {
