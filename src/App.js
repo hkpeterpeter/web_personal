@@ -3,8 +3,6 @@ import {
   Row,
   Col,
   Grid,
-  Panel,
-  Accordion,
   Tabs,
   Tab,
 } from 'react-bootstrap';
@@ -20,8 +18,8 @@ import MySlideShow from './SlideShow';
 
 import PROFILE from './data/profile';
 import BasicProfile from './BasicProfile';
-import ExpPanelHeader from './ExpPanelHeader';
-import ExpPanelContent from './ExpPanelContent';
+
+import ExpPanel from './ExpPanel';
 
 import evaluationReports from './data/evaluationReports';
 
@@ -38,27 +36,30 @@ import TeachingSummary from './TeachingSummary';
 
 const expPanels = (
   PROFILE.experience.map(
-    (exp, i) => {
-      const header = <h3 className="PointerCursor"><ExpPanelHeader title={exp.title} icon={exp.icon} /></h3>;
-      return <Panel header={header} key={i} eventKey={`xc${i}`} bsStyle="default" ><ExpPanelContent exp={exp} /></Panel>;
-    })
-);
-const profileDetails = (
-  <Accordion>
-    {expPanels}
-  </Accordion>
+    (exp, i) => <ExpPanel exp={exp} key={i} bsStyle="default" />
+  )
 );
 
+const tabInfoArray = [
+  { title: 'COMP1001', summary: summaryCOMP1001 },
+  { title: 'COMP1022P', summary: summaryCOMP1022P },
+  { title: 'COMP1029C', summary: summaryCOMP1029C },
+  { title: 'COMP1029J', summary: summaryCOMP1029J },
+  { title: 'COMP2011', summary: summaryCOMP2011 },
+  { title: 'COMP2012', summary: summaryCOMP2012 },
+  { title: 'COMP3111', summary: summaryCOMP3111 },
+  { title: 'COMP4511', summary: summaryCOMP4511 },
+];
+
+const teachingSummaryTabs = tabInfoArray.map((m, i) => (
+  <Tab eventKey={i} key={i} title={m.title}>
+    <TeachingSummary reports={evaluationReports} summary={m.summary} />
+  </Tab>
+  ));
+
 const tabsTeachingSummaryInstance = (
-  <Tabs defaultActiveKey={1} id="tabsTeachingSummary">
-    <Tab eventKey={1} title="COMP1001"><TeachingSummary reports={evaluationReports} summary={summaryCOMP1001} /></Tab>
-    <Tab eventKey={2} title="COMP1022P"><TeachingSummary reports={evaluationReports} summary={summaryCOMP1022P} /></Tab>
-    <Tab eventKey={3} title="COMP1029C"><TeachingSummary reports={evaluationReports} summary={summaryCOMP1029C} /></Tab>
-    <Tab eventKey={4} title="COMP1029J"><TeachingSummary reports={evaluationReports} summary={summaryCOMP1029J} /></Tab>
-    <Tab eventKey={5} title="COMP2011"><TeachingSummary reports={evaluationReports} summary={summaryCOMP2011} /></Tab>
-    <Tab eventKey={6} title="COMP2012"><TeachingSummary reports={evaluationReports} summary={summaryCOMP2012} /></Tab>
-    <Tab eventKey={7} title="COMP3111"><TeachingSummary reports={evaluationReports} summary={summaryCOMP3111} /></Tab>
-    <Tab eventKey={8} title="COMP4511"><TeachingSummary reports={evaluationReports} summary={summaryCOMP4511} /></Tab>
+  <Tabs defaultActiveKey={0} id="tabsTeachingSummary">
+    {teachingSummaryTabs}
   </Tabs>
 );
 
@@ -84,7 +85,7 @@ const root = (
         </Col>
 
         <Col xs={12} sm={5} md={5} lg={5}>
-          {profileDetails}
+          {expPanels}
         </Col>
       </Row>
       <Row>

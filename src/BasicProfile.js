@@ -6,7 +6,6 @@ import {
   Row,
   Col,
   Image,
-  Button,
   Modal,
 } from 'react-bootstrap';
 

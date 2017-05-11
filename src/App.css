@@ -2,14 +2,9 @@
   text-align: left;
 }
 
-.PointerCursor {
-  cursor: pointer;
-}
-
 .Footer {
   text-align: center;
 }
-
 
 /* Carousel style override */
 .carousel-control.left, .carousel-control.right {
