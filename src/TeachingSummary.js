@@ -38,8 +38,8 @@ class TeachingSummary extends React.Component {
     return (
       <div>
         <h4><strong>{summary.code} - {summary.title}</strong></h4>
-        { summary.pastCodes !== undefined && <h5>Related: {pastCodes}</h5>}
-        { <h5>TA Evaluation: {reportDownloadLinks} </h5> }
+        { summary.pastCodes !== undefined && <h5>Related courses: {pastCodes}</h5>}
+        { <h5>Evaluation reports: {reportDownloadLinks} </h5> }
         { summary.description !== undefined && <Panel>{summary.description}</Panel> }
         <Grid>
           <Row>

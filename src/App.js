@@ -79,17 +79,17 @@ const root = (
       <Row><MySlideShow items={EVENTS} /></Row>
       <Row>
 
-        <Col xs={12} sm={8} md={8} lg={8}>
+        <Col xs={12} sm={7} md={7} lg={7}>
           <BasicProfile profile={PROFILE.basic} />
         </Col>
 
-        <Col xs={12} sm={4} md={4} lg={4}>
+        <Col xs={12} sm={5} md={5} lg={5}>
           {profileDetails}
         </Col>
       </Row>
       <Row>
         <div>
-          <h3><strong>Teaching Evaluation Summary</strong></h3>
+          <h3><strong>Teaching Evaluation</strong></h3>
           {tabsTeachingSummaryInstance}
         </div>
       </Row>

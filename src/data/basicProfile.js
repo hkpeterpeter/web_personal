@@ -1,11 +1,11 @@
 const profileDescription = `Mr Chung has more than 8 years of experience
- in the higher education sector, with solid experience in software engineering,
- entrepreneurship, alumni engagement and strong connections with the local startup community.`;
+ in the higher education sector. He has solid experience in software engineering,
+ entrepreneurship, and alumni engagement. He is an active Hackathon organizer and participant
+ and a co-founder of a HealthTech startup. He maintains strong connections with the
+ local startup community.`;
 
 const MScITE = 'MSc, Information Technology in Education, HKU (E-learning specialism)';
-
 const MPhilCSE = 'MPhil, Computer Science and Engineering, HKUST';
-
 const BEngCSIE = 'BEng, Computer Science (Information Engineering), HKUST (First Class Honors)';
 
 const basicProfile = {

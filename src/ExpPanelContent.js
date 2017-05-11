@@ -28,6 +28,7 @@ class ExpPanelContent extends React.Component {
         {exp.jobs !== undefined && <div><p>Job duties:</p><ul>{jobItems}</ul></div> }
         {exp.awards !== undefined && <div><p>Awards:</p><ul>{awardItems}</ul></div> }
         {exp.media !== undefined && <div><p>Media:</p><ul>{mediaItems}</ul></div> }
+        {exp.homepage !== undefined && <div><a href={exp.homepage}>Homepage</a></div> }
       </div>
     );
   }
@@ -40,6 +41,7 @@ ExpPanelContent.propTypes = {
     jobs: PropTypes.arrayOf(PropTypes.object),
     awards: PropTypes.arrayOf(PropTypes.object),
     media: PropTypes.arrayOf(PropTypes.object),
+    homepage: PropTypes.string,
   }).isRequired,
 };
 

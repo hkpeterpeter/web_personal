@@ -1,6 +1,6 @@
 const expHackOCDescription = `Mr. Chung is a passionate hackathon organizer.
-He co-founded hackUST in 2014 and was the lead organizer
-in 2014-16. He is one of the leaders promoting hackathon competitions in Hong Kong.`;
+He co-founded hackUST in 2014 and was the lead staff organizer
+in 2014-16. He is one of the leaders promoting hackathon culture in Hong Kong.`;
 
 const makeJob = (title, org, period, url) => ({ title, org, period, url });
 

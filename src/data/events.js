@@ -3,12 +3,14 @@ const makeEvent = (evt, fn) => ({ evt, fn });
 // TODO: refactor the remaining data values
 
 const events = [
+  makeEvent('CSE Farewell Dinner 2017', 'CSE_Farewell_Dinner_2017.jpg'),
   makeEvent('hackUST 2017', 'hackUST_2017.png'),
   makeEvent('SENG Shenzhen Alumni Gathering 2017', 'SENG_Engineering_Alumni_Gathering_2017.jpg'),
-  { evt: 'Microsoft ImagineHack 2017', fn: 'Microsoft_ImagineHack_2017.jpg' },
-  { evt: 'HealthTech Asia 2017', fn: 'habhub-health-tech-asia-2017.jpg' },
-  { evt: 'Hour of Code Hong Kong 2nd anniversary', fn: 'HoC-2nd-anniversary-HabHub-Booth.jpg' },
-  { evt: 'Hack-O-Life 2016', fn: 'hack-of-life-2016.jpg' },
+  makeEvent('Microsoft ImagineHack 2017', 'Microsoft_ImagineHack_2017.jpg'),
+  makeEvent('HealthTech Asia 2017', 'habhub-health-tech-asia-2017.jpg'),
+  makeEvent('Hour of Code Hong Kong 2nd anniversary', 'HoC-2nd-anniversary-HabHub-Booth.jpg'),
+  makeEvent('CSEAA LightHouse of IT Trends Event 2016/17', 'CSEAA_Lighthouse_Of_IT_Trends_2016.jpg'),
+  makeEvent('Hack-O-Life 2016', 'hack-of-life-2016.jpg'),
   { evt: 'JeJu Hackathon 2016, South Korea', fn: 'JeJu_Hackathon_2016_Blogory.jpg' },
   { evt: 'hackJam 2016', fn: 'hackJam_2016.jpg' },
   { evt: 'CSESS Photo Taking 2016', fn: 'CSESS_PhotoTaking_2016.jpg' },

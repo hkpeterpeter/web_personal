@@ -4,8 +4,8 @@ const makeAward = (title, org, period, url, country) => ({ title, org, period, u
 const expTeachingSupportDescription = `
   Mr. Chung is an experienced teaching support.
   He is an awardee of the Professor Samuel Chanson Best Teaching Assistant in 2008.
-  In 2011-12, he led a team of teaching assistant to help
-  develop a new Java/Greenfoot programming course tailor-made for year-1 students
+  In 2011-12, he led a team of teaching assistant to
+  develop a new Java/Greenfoot programming course tailor-made for Year-1 students
   in the new 334-curriculum. Since 2015, he helped prepare teaching materials
   related to software engineering (e.g. Bootstrap, AngularJS, AWS, Git) and
   Linux system and kernel programming`;
