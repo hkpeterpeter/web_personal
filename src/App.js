@@ -65,8 +65,10 @@ const tabsTeachingSummaryInstance = (
 
 const footerInstance = (
   <div className="Footer">
-    <p>&copy; Copyright by Peter Chung</p>
-    <p>Powered by
+    <p>&copy; Peter Chung </p>
+    <p>Open-source at <a href="//github.com/hkpeterpeter/web_personal">
+      GitHub</a><br />
+     Powered by
      <a href="https://react-bootstrap.github.io/"> React Bootstrap</a></p>
     <p> <a href="http://www.cse.ust.hk">CSE</a> | <a href="http://www.ust.hk">HKUST</a> </p>
     <br /><br />
