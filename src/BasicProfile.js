@@ -9,6 +9,19 @@ import {
   Modal,
 } from 'react-bootstrap';
 
+const iconLinksData = [
+  { url: '//fb.com/cspeter', iconStyle: 'fa-facebook-official' },
+  { url: '//www.linkedin.com/in/hkpeterpeter', iconStyle: 'fa-linkedin-square' },
+  { url: '//api.whatsapp.com/send?phone=85264921981', iconStyle: 'fa-whatsapp' },
+];
+const iconsLinks = iconLinksData.map((item, i) => (
+  <span>
+    <a href={item.url}>
+      <i className={`fa fa-2x ${item.iconStyle}`} aria-hidden="true" />
+    </a>&nbsp;
+  </span>
+));
+
 class BasicProfile extends React.Component {
 
   constructor(props) {
@@ -59,27 +72,12 @@ class BasicProfile extends React.Component {
             />
             <br />
 
-            {/* icons links */}
-            <a href="//fb.com/cspeter">
-              <i className="fa fa-2x fa-facebook-official" aria-hidden="true" />
-            </a>
-            <span>&nbsp;</span>
-            <a href="//www.linkedin.com/in/hkpeterpeter">
-              <i className="fa fa-2x fa-linkedin-square" aria-hidden="true" />
-            </a>
-            <span>&nbsp;</span>
-            <a href="//github.com/hkpeterpeter">
-              <i className="fa fa-2x fa-github-square" aria-hidden="true" />
-            </a>
-            <span>&nbsp;</span>
-            <a href="//api.whatsapp.com/send?phone=85264921981">
-              <i className="fa fa-2x fa-whatsapp" aria-hidden="true" />
-            </a>
-            <span>&nbsp;</span>
-
-            <a href="#" onClick={this.open}>
-              <i className="fa fa-2x fa-weixin" aria-hidden="true" />
-            </a>
+            <div className="text-center">
+              {iconsLinks}
+              <span>
+                <i onClick={this.open} className="fa fa-2x fa-weixin text-info" aria-hidden="true" />
+              &nbsp;</span>
+            </div>
 
           </Col>
           <Col xs={12} sm={5} md={5} lg={5}>

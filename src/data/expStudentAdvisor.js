@@ -5,7 +5,7 @@ served as an advisor in SIGHT in which he assisted a student-driven team to deve
 an electronic health record  (eHR) system for a NGO in Cambodia.
 After a year of development, he joined the team to deploy the eHR system in Cambodia in 2015.
 The system was well-received by the partnering NGO.
-In 2013, he served as Academic Counsellor in Department of Computer Science and Engineering
+In 2013/14, he served as Academic Counsellor in Department of Computer Science and Engineering
 and Student Advisor in School of Engineering.`;
 
 const SIGHTAdvisor = makeJob('Advisor', 'Student Innovation for Global Health Technology (SIGHT)',

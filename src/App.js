@@ -65,12 +65,12 @@ const tabsTeachingSummaryInstance = (
 
 const footerInstance = (
   <div className="Footer">
-    <p>&copy; Peter Chung </p>
-    <p>Open-source at <a href="//github.com/hkpeterpeter/web_personal">
-      GitHub</a><br />
-     Powered by
-     <a href="https://react-bootstrap.github.io/"> React Bootstrap</a></p>
-    <p> <a href="http://www.cse.ust.hk">CSE</a> | <a href="http://www.ust.hk">HKUST</a> </p>
+    <p><i className="fa fa-2x fa-github-square" aria-hidden="true" /> Open-source at <a href="//github.com/hkpeterpeter/web_personal">
+      GitHub </a>
+    </p>
+    <p>
+      <a href="//www.cse.ust.hk">CSE</a> | <a href="//www.ust.hk">HKUST</a> | <a href="//react-bootstrap.github.io/"> React Bootstrap</a>
+    </p>
     <br /><br />
   </div>
 );

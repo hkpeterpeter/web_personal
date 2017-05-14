@@ -8,7 +8,7 @@ const ABFYEAlumniFellow = makeJob('Alumni Fellow', 'ABFYE, HKUST', '2017', '//ab
 const WIDSOCMember = makeJob('Organizing Committee Member', 'World Internet Developer Summit', '2016');
 
 const expVolunteerDescription = `Mr Chung is a motivated volunteer. He is the Founding
-President of CSE Alumni Association (CSE).  Partnering with
+President of CSE Alumni Association (CSEAA).  Partnering with
 Department of CSE at HKUST, mentorship programs were launched to enrich students’
 industrial exposure in 2014 and 2015. He also serves as Alumni Fellow of
 The Academy for Bright Future Young Engineers (ABYFE), HKUST.

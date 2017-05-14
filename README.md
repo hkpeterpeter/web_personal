@@ -32,12 +32,12 @@ Dependencies
 - [`react`](https://facebook.github.io/react/) JavaScript library to build user interface
   - [`react-dom`](https://facebook.github.io/react/docs/react-dom.html) Virtual DOM
   - [`prop-types`](https://facebook.github.io/react/docs/typechecking-with-proptypes.html) Type checking for React
-- [`react-bootstrap`](http://react-bootstrap.github.io/) Boostrap 3 React bindings
+- [`react-bootstrap`](http://react-bootstrap.github.io/) Bootstrap 3 React bindings
 
 devDependencies
 - `eslint` related:
   - eslint, eslint-config-airbnb,  eslint-plugin-import, eslint-plugin-jsx-a11y, eslint-plugin-react
-- `react-scripts`
+- `react-scripts` React application development script
 
 Globally installed tools
 

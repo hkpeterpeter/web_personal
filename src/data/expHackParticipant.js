@@ -10,7 +10,7 @@ const awardHackUST2017 = {
 };
 
 const awardSuperChargerFinTechHackathon2017 = {
-  title: 'participant',
+  title: 'Participant',
   org: 'SuperCharger FinTech Hackathon',
   period: '2017',
   country: 'Hong Kong',
