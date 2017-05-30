@@ -4,6 +4,10 @@ in 2014-16. He is one of the leaders promoting hackathon culture in Hong Kong.`;
 
 const makeJob = (title, org, period, url) => ({ title, org, period, url });
 
+const hangSengHackEventDayOC = makeJob('Event-day Organizing Committee Member',
+'Hang Seng FinTech Hackathon', '2017',
+'//www.cyberport.hk/en/events/4255');
+
 const angelHackAmbassador = makeJob('Ambassador',
 'AngelHack Hong Kong', '2017',
 '//angelhack.com/angelhack-global-hackathon-series-hong-kong/');
@@ -65,6 +69,7 @@ const expHackOC = {
   icon: 'star',
   description: expHackOCDescription,
   jobs: [
+    hangSengHackEventDayOC,
     angelHackAmbassador,
     ecJammingAdvisor,
     microsoftOCLeader,
