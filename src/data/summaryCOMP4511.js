@@ -12,6 +12,9 @@ const goodArray = [];
 const badArray = [];
 
 goodArray.push('Peter tried to be helpful.');
+goodArray.push('He answers my email questions extremely fast. Also he explains everything extremely clear.');
+goodArray.push('Helpful TA. Easy to understand lab materials.');
+goodArray.push('Nothing. He\'s good.');
 
 badArray.push('He grades assignment too slowely');
 badArray.push(`Peter shall try to learn more about the course,

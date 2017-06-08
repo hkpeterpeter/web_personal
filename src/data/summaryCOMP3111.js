@@ -21,6 +21,7 @@ goodArray.push('Good interaction with students');
 goodArray.push('Make the students feel his interest in software engineering');
 goodArray.push('Attentive with students giving feedbacks');
 goodArray.push('He was very friendly');
+goodArray.push('Nice. Would share some of his own experience to improve our learning');
 
 badArray.push('too often to ask O.K.?');
 badArray.push(`For the project demo, he kept distracting us while we were doing
@@ -33,6 +34,9 @@ badArray.push(`Re-align the mismatch between the posted grading criteria
   and the actual grading scenario`);
 badArray.push('Seems like he favors students who speak Cantonese...');
 badArray.push('He should at least have some knowledge about the course material');
+badArray.push('The explanation about the requirements of the project is not clear enough. TA is not experienced enough in the related area.');
+badArray.push('Get himself to know the subject better so that he can help solving actual problems instead of just lab problems.');
+badArray.push('The TA should improve his ability related with this course. When we ask questions about asp.net MVC, he knew as little as us!');
 
 const summaryCOMP3111 = {
   code: 'COMP3111',

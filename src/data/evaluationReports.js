@@ -86,6 +86,11 @@ const evaluationReports = [
   parse('COMP3111H_LA1_Fall1617'),
   parse('COMP1029C_LA1_Winter1617'),
   parse('COMP1029J_LA1_Winter1617'),
+  parse('COMP3111_LA1_Spring1617'),
+  parse('COMP3111_LA2_Spring1617'),
+  parse('COMP3111_LA3_Spring1617'),
+  parse('COMP4511_LA1_Spring1617'),
+  parse('COMP4511_LA2_Spring1617'),
 ];
 
 export default evaluationReports;
