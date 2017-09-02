@@ -1,5 +1,6 @@
 const makeJob = (title, org, period, url) => ({ title, org, period, url });
 
+const SoInSoGoodJudge = makeJob('Judge, a pitching competition of Social-up Youth Program', 'SoInSoGood/HKSTP', '2017');
 const CSEAAFoundingPresident = makeJob('Founding President', 'CSEAA', '2014', '//www.cse.ust.hk/cseaa/');
 const CSEAAVicePresident = makeJob('Vice President', 'CSEAA', '2015-16', '//www.cse.ust.hk/cseaa/');
 const CSEAATreasurer = makeJob('Treasurer', 'CSEAA', '2017', '//www.cse.ust.hk/cseaa/');
@@ -26,6 +27,7 @@ const expVolunteer = {
     HKOSCOrganizer,
     ABFYEAlumniFellow,
     WIDSOCMember,
+    SoInSoGoodJudge,
   ],
 };
 

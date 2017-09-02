@@ -3,6 +3,7 @@ const makeEvent = (evt, fn) => ({ evt, fn });
 // TODO: refactor the remaining data values
 
 const events = [
+  makeEvent('Judge - A pitching competition of Social-up Youth Program 2017', 'SoInSoGood_HKSTP_2017.jpg'),
   makeEvent('SENG Alumni Social Mixer 2017', 'SENG_Alumni_Social_Mixer_2017.jpg'),
   makeEvent('Interview by TVB about HabHub at RISE 2017', 'HabHub_TVB_Interview_RISE.jpg'),
   makeEvent('SENG Facebook Chatbot Workshop', 'SENG_Facebook_Chatbot_Workshop.jpg'),
