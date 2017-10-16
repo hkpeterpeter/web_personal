@@ -4,6 +4,9 @@ in 2014-16. He is one of the leaders promoting hackathon culture in Hong Kong.`;
 
 const makeJob = (title, org, period, url) => ({ title, org, period, url });
 
+const VernetzteWeltenHackathonMentor =
+ makeJob('Mentor', 'Vernetzte Welten Hackathon', '2017');
+
 const hangSengHackEventDayOC = makeJob('Event-day Organizing Committee Member',
 'Hang Seng FinTech Hackathon', '2017',
 '//www.cyberport.hk/en/events/4255');
@@ -69,6 +72,7 @@ const expHackOC = {
   icon: 'star',
   description: expHackOCDescription,
   jobs: [
+    VernetzteWeltenHackathonMentor,
     hangSengHackEventDayOC,
     angelHackAmbassador,
     ecJammingAdvisor,

@@ -83,12 +83,15 @@ class BasicProfile extends React.Component {
           <Col xs={12} sm={5} md={5} lg={5}>
             <div>
               <h3><strong>{profile.firstName} {profile.lastName}</strong></h3>
+              <p><em>{profile.tags}</em></p>
               <em>{profile.title}</em>,
               <span> Department of {profile.department}, {profile.university}</span>
               <p>{profile.office} via {profile.officeLocation} </p>
               <p>{profile.degrees.map((degree, index) =>
                 <span key={index} >{degree}<br /></span>) }</p>
               <p>{profile.description}</p>
+              <br />
+
             </div>
           </Col>
         </Row>

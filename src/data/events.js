@@ -3,6 +3,7 @@ const makeEvent = (evt, fn) => ({ evt, fn });
 // TODO: refactor the remaining data values
 
 const events = [
+  makeEvent('CSAA Mid-Autumn Festival Party and ExCo meeting 2017', 'CSAA_mid_autumn_exco_meeting_2017.jpg'),
   makeEvent('HKUST Alumni Visit 2017 - Shenzhen BlueBay Incubation Program', 'alumni_visit_hkust_bluebay_incubation_2017.jpg'),
   makeEvent('Judge - A pitching competition of Social-up Youth Program 2017', 'SoInSoGood_HKSTP_2017.jpg'),
   makeEvent('SENG Alumni Social Mixer 2017', 'SENG_Alumni_Social_Mixer_2017.jpg'),

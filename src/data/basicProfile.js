@@ -16,14 +16,15 @@ const basicProfile = {
   picture: 'profile_peter.jpg',
   department: 'Computer Science and Engineering',
   university: 'HKUST',
-  office: 'Room 4209',
-  officeLocation: 'Lift 19 (near CS Lab 4)',
+  office: 'Room 2532',
+  officeLocation: 'Lift 25/26',
   description: profileDescription,
   degrees: [
     MScITE,
     MPhilCSE,
     BEngCSIE,
   ],
+  tags: 'Hackathon Expert | Entrepreneur | Active Alumni | Educator',
 };
 
 export default basicProfile;
