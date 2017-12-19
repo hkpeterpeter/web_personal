@@ -3,6 +3,7 @@ const makeEvent = (evt, fn) => ({ evt, fn });
 // TODO: refactor the remaining data values
 
 const events = [
+  makeEvent('HKUST x Radica Big Datathon 2017', 'hkust_radica_bigdatathon_2017.jpg'),
   makeEvent('SmarTone Hackathon 2017', 'smartonehackathon_2017.jpg'),
   makeEvent('CSAA Mid-Autumn Festival Party and ExCo meeting 2017', 'CSAA_mid_autumn_exco_meeting_2017.jpg'),
   makeEvent('HKUST Alumni Visit 2017 - Shenzhen BlueBay Incubation Program', 'alumni_visit_hkust_bluebay_incubation_2017.jpg'),
@@ -17,6 +18,7 @@ const events = [
   makeEvent('Cyberport Alumni Association Ice-break meetup 2017', 'Cyberport_Alumni_Association_2017.jpg'),
   makeEvent('CSE Farewell Dinner 2017', 'CSE_Farewell_Dinner_2017.jpg'),
   makeEvent('hackUST 2017', 'hackUST_2017.png'),
+  makeEvent('SuperCharger 2.0 FinTech Hackathon 2017', 'supercharger_fintech_hackathon_2017.jpg'),
   makeEvent('SENG Shenzhen Alumni Gathering 2017', 'SENG_Engineering_Alumni_Gathering_2017.jpg'),
   makeEvent('Microsoft ImagineHack 2017', 'Microsoft_ImagineHack_2017.jpg'),
   makeEvent('HealthTech Asia 2017', 'habhub-health-tech-asia-2017.jpg'),
