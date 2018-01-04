@@ -27,9 +27,12 @@ import summaryCOMP1001 from './data/summaryCOMP1001';
 import summaryCOMP1022P from './data/summaryCOMP1022P';
 import summaryCOMP1029C from './data/summaryCOMP1029C';
 import summaryCOMP1029J from './data/summaryCOMP1029J';
+import summaryCOMP1029P from './data/summaryCOMP1029P';
 import summaryCOMP2011 from './data/summaryCOMP2011';
 import summaryCOMP2012 from './data/summaryCOMP2012';
+import summaryCOMP2611 from './data/summaryCOMP2611';
 import summaryCOMP3111 from './data/summaryCOMP3111';
+import summaryCOMP3511 from './data/summaryCOMP3511';
 import summaryCOMP4511 from './data/summaryCOMP4511';
 
 import TeachingSummary from './TeachingSummary';
@@ -45,9 +48,12 @@ const tabInfoArray = [
   { title: 'COMP1022P', summary: summaryCOMP1022P },
   { title: 'COMP1029C', summary: summaryCOMP1029C },
   { title: 'COMP1029J', summary: summaryCOMP1029J },
+  { title: 'COMP1029P', summary: summaryCOMP1029P },
   { title: 'COMP2011', summary: summaryCOMP2011 },
   { title: 'COMP2012', summary: summaryCOMP2012 },
+  { title: 'COMP2611', summary: summaryCOMP2611 },
   { title: 'COMP3111', summary: summaryCOMP3111 },
+  { title: 'COMP3511', summary: summaryCOMP3511 },
   { title: 'COMP4511', summary: summaryCOMP4511 },
 ];
 

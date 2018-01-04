@@ -91,6 +91,16 @@ const evaluationReports = [
   parse('COMP3111_LA3_Spring1617'),
   parse('COMP4511_LA1_Spring1617'),
   parse('COMP4511_LA2_Spring1617'),
+  parse('COMP1029C_LA1_Summer1617'),
+  parse('COMP1029P_LA1_Summer1617'),
+  parse('COMP2611_LA1_Fall1718'),
+  parse('COMP2611_LA2_Fall1718'),
+  parse('COMP2611_T2_Fall1718'),
+  parse('COMP3511_LA1_Fall1718'),
+  parse('COMP3511_LA2_Fall1718'),
+  parse('COMP3511_LA3_Fall1718'),
+  parse('COMP3511_LA4_Fall1718'),
+  parse('COMP3511_LA5_Fall1718'),
 ];
 
 export default evaluationReports;
