@@ -4,6 +4,9 @@ in 2014-16. He is one of the leaders promoting hackathon culture in Hong Kong.`;
 
 const makeJob = (title, org, period, url) => ({ title, org, period, url });
 
+const HKUSTRadicaDatathonOrganizer = makeJob('Project Manager',
+'HKUST x Radica Datathon', '2017', '//bdi.ust.hk/datathon');
+
 const SmarToneHackathonOrganizer = makeJob('Event-day Organizing Committee Member',
 'SmarTone Hackathon', '2017', '//smartonehackathon.com');
 
@@ -75,6 +78,7 @@ const expHackOC = {
   icon: 'star',
   description: expHackOCDescription,
   jobs: [
+    HKUSTRadicaDatathonOrganizer,
     SmarToneHackathonOrganizer,
     VernetzteWeltenHackathonMentor,
     hangSengHackEventDayOC,
