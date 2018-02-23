@@ -5,6 +5,12 @@ const badArray = [];
 
 goodArray.push('patient');
 goodArray.push('responded');
+goodArray.push('Efficient initially. Thanks for that.');
+goodArray.push('Good Feedback');
+goodArray.push('He did grading of the assignments');
+
+badArray.push('Be more responsive, hopefully.');
+badArray.push('His reply to questions relating to course logistic is very impatient.');
 
 
 const summaryCOMP1029P = {
