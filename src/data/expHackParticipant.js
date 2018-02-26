@@ -1,6 +1,13 @@
 const expHackParticipantDescription = `Mr Chung is an active hackathon participant.
 He participated and won many Hackathons in Hong Kong and oversea`;
 
+const awardGLH2018 = {
+  title: 'Second runner up',
+  org: 'Global Legal Hackathon',
+  period: '2018',
+  url: '//globallegalhackathon.com',
+  country: 'Hong Kong',
+};
 
 const awardWatsonHack2018 = {
   title: 'Highlighted in LinkedIn of AS Watson \'s group',
@@ -60,6 +67,7 @@ const expHackParticipant = {
   icon: 'user',
   description: expHackParticipantDescription,
   awards: [
+    awardGLH2018,
     awardWatsonHack2018,
     awardHackUST2017,
     awardSuperChargerFinTechHackathon2017,

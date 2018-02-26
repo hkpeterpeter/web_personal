@@ -3,6 +3,7 @@ const makeEvent = (evt, fn) => ({ evt, fn });
 // TODO: refactor the remaining data values
 
 const events = [
+  makeEvent('Global Legal Hackathon Hong Kong 2018','global_legal_hackathon_2018.jpg'),
   makeEvent('Fishackathon Hong Kong 2018 @ HKUST', 'fishackathon_hk_2018.jpg'),
   makeEvent('AS Watson Hackathon 2018', 'aswatson_hackathon_2018.jpg'),
   makeEvent('HKUST x Radica Big Datathon 2017', 'hkust_radica_bigdatathon_2017.jpg'),
