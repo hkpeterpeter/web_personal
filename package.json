@@ -1,5 +1,5 @@
 {
-  "homepage": ".",
+  "homepage": "https://hkpeterpeter.github.io/web_personal",
   "name": "web_personal",
   "version": "1.0.0",
   "private": true,
@@ -15,9 +15,12 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
+    "gh-pages": "^1.1.0",
     "react-scripts": "0.9.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

@@ -8,6 +8,7 @@ yarn                        # install Dependencies
 yarn start                  # Hot loading is enabled. Keep developing, browser will be updated automatically
 yarn run build              # production
 serve -s build              # test the production. Deploy the `build` folder to a webserver
+yarn run deploy             # deploy to the destination ("homepage" in package.json)
 ```
 
 ## Project directory
