@@ -50,8 +50,6 @@ class BasicProfile extends React.Component {
       <Grid>
         <Row>
           <Col xs={12} sm={2} md={2} lg={2}>
-
-
             <Modal show={this.state.showModal} onHide={this.close}>
               <Modal.Header closeButton>
                 <Modal.Title>WeChat QR code</Modal.Title>
